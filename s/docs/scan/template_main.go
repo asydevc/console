@@ -9,7 +9,7 @@ import (
     "fmt"
     "reflect"
 
-    "github.com/fuyibing/console/v2/s/docs/ref"
+    "github.com/asydevc/console/v2/s/docs/ref"
 {{IMPORTS}}
 )
 

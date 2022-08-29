@@ -8,8 +8,8 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/fuyibing/console/v2/base"
-	"github.com/fuyibing/console/v2/i"
+	"github.com/asydevc/console/v2/base"
+	"github.com/asydevc/console/v2/i"
 )
 
 type stop struct {

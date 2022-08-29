@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/fuyibing/console/v2/i"
+	"github.com/asydevc/console/v2/i"
 )
 
 type option struct {

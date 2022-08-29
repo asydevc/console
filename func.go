@@ -4,17 +4,17 @@
 package console
 
 import (
-	"github.com/fuyibing/console/v2/base"
-	"github.com/fuyibing/console/v2/i"
-	"github.com/fuyibing/console/v2/s/build/model"
-	"github.com/fuyibing/console/v2/s/build/path"
-	"github.com/fuyibing/console/v2/s/build/service"
-	"github.com/fuyibing/console/v2/s/consul/deregister"
-	"github.com/fuyibing/console/v2/s/consul/download"
-	"github.com/fuyibing/console/v2/s/consul/register"
-	"github.com/fuyibing/console/v2/s/consul/upload"
-	"github.com/fuyibing/console/v2/s/docs"
-	"github.com/fuyibing/console/v2/s/help"
+	"github.com/asydevc/console/v2/base"
+	"github.com/asydevc/console/v2/i"
+	"github.com/asydevc/console/v2/s/build/model"
+	"github.com/asydevc/console/v2/s/build/path"
+	"github.com/asydevc/console/v2/s/build/service"
+	"github.com/asydevc/console/v2/s/consul/deregister"
+	"github.com/asydevc/console/v2/s/consul/download"
+	"github.com/asydevc/console/v2/s/consul/register"
+	"github.com/asydevc/console/v2/s/consul/upload"
+	"github.com/asydevc/console/v2/s/docs"
+	"github.com/asydevc/console/v2/s/help"
 )
 
 // Return default console.

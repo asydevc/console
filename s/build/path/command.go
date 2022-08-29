@@ -9,8 +9,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/fuyibing/console/v2/base"
-	"github.com/fuyibing/console/v2/i"
+	"github.com/asydevc/console/v2/base"
+	"github.com/asydevc/console/v2/i"
 )
 
 const (

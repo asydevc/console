@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fuyibing/console/v2/i"
+	"github.com/asydevc/console/v2/i"
 )
 
 // Console struct.

@@ -4,9 +4,9 @@
 package upload
 
 import (
-	"github.com/fuyibing/console/v2/base"
-	"github.com/fuyibing/console/v2/i"
-	"github.com/fuyibing/console/v2/s/consul"
+	"github.com/asydevc/console/v2/base"
+	"github.com/asydevc/console/v2/i"
+	"github.com/asydevc/console/v2/s/consul"
 )
 
 const (

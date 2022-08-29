@@ -13,7 +13,7 @@ import (
 
 	"github.com/hashicorp/consul/api"
 
-	"github.com/fuyibing/console/v2/i"
+	"github.com/asydevc/console/v2/i"
 )
 
 var (

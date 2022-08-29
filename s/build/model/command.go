@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fuyibing/db"
+	"github.com/asydevc/db"
 
-	"github.com/fuyibing/console/v2/base"
-	"github.com/fuyibing/console/v2/i"
-	"github.com/fuyibing/console/v2/s/build"
+	"github.com/asydevc/console/v2/base"
+	"github.com/asydevc/console/v2/i"
+	"github.com/asydevc/console/v2/s/build"
 )
 
 const (
