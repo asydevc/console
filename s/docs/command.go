@@ -4,9 +4,10 @@
 package docs
 
 import (
-	"path/filepath"
-
 	"github.com/asydevc/console/v2/s/docs/scan"
+	"path/filepath"
+	"runtime"
+	"strings"
 
 	"github.com/asydevc/console/v2/base"
 	"github.com/asydevc/console/v2/i"
@@ -16,6 +17,8 @@ const (
 	Description = "Export application document"
 	Name        = "docs"
 )
+
+var osType = runtime.GOOS
 
 // 导出文档.
 type command struct {
@@ -139,6 +142,9 @@ func (o *command) before(c i.IConsole) bool {
 	// 7. 完成.
 	if o.basePath == "" || o.basePath == "." || o.basePath == "./" {
 		if s, err := filepath.Abs("./"); err == nil {
+			if osType == "windows" {
+				s = strings.Replace(s, "\\", "/", -1)
+			}
 			o.basePath = s
 		}
 	}
