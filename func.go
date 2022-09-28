@@ -7,7 +7,6 @@ import (
 	"github.com/asydevc/console/v2/base"
 	"github.com/asydevc/console/v2/i"
 	"github.com/asydevc/console/v2/s/build/model"
-	"github.com/asydevc/console/v2/s/build/path"
 	"github.com/asydevc/console/v2/s/build/service"
 	"github.com/asydevc/console/v2/s/docs"
 	"github.com/asydevc/console/v2/s/help"
@@ -17,7 +16,8 @@ import (
 func Default() i.IConsole {
 	c := New()
 	c.Add(docs.New())
-	c.Add(path.New(), model.New(), service.New())
+	c.Add(model.New())
+	c.Add(service.New())
 	return c
 }
 
