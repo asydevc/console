@@ -9,10 +9,6 @@ import (
 	"github.com/asydevc/console/v2/s/build/model"
 	"github.com/asydevc/console/v2/s/build/path"
 	"github.com/asydevc/console/v2/s/build/service"
-	"github.com/asydevc/console/v2/s/consul/deregister"
-	"github.com/asydevc/console/v2/s/consul/download"
-	"github.com/asydevc/console/v2/s/consul/register"
-	"github.com/asydevc/console/v2/s/consul/upload"
 	"github.com/asydevc/console/v2/s/docs"
 	"github.com/asydevc/console/v2/s/help"
 )
@@ -22,7 +18,6 @@ func Default() i.IConsole {
 	c := New()
 	c.Add(docs.New())
 	c.Add(path.New(), model.New(), service.New())
-	c.Add(download.New(), upload.New(), register.New(), deregister.New())
 	return c
 }
 
