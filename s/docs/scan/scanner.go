@@ -570,7 +570,9 @@ func (o *scanner) runScript() error {
 	for k, x := range o.payloads {
 		pkg := x.GetPkg()
 		ali, ok := importKeys[pkg]
-
+		if pkg == "" {
+			continue
+		}
 		if !ok {
 			ali = fmt.Sprintf("t%d", importKey)
 			importKey++
