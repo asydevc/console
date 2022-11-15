@@ -53,7 +53,8 @@ func (o *directory) Run() (err error) {
 	for _, d := range ds {
 		// 目录.
 		if d.IsDir() {
-			if o.scanner.IsRecursion() && r1.MatchString(d.Name()) {
+			//if o.scanner.IsRecursion() && r1.MatchString(d.Name()) {
+			if r1.MatchString(d.Name()) {
 				if err = NewDirectory(o.scanner, fmt.Sprintf("%s/%s", o.folder, d.Name())).Run(); err != nil {
 					return err
 				}
